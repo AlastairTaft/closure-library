@@ -116,7 +116,7 @@ goog.ui.MenuItem.prototype.setValue = function(value) {
 
 /** @override */
 goog.ui.MenuItem.prototype.setSupportedState = function(state, support) {
-  goog.ui.MenuItem.base(this, 'setSupportedState', state, support);
+  goog.base(this, 'setSupportedState', state, support);
   switch (state) {
     case goog.ui.Component.State.SELECTED:
       this.setSelectableInternal_(support);
@@ -246,7 +246,7 @@ goog.ui.MenuItem.prototype.handleMouseUp = function(e) {
     }
   }
 
-  goog.ui.MenuItem.base(this, 'handleMouseUp', e);
+  goog.base(this, 'handleMouseUp', e);
 };
 
 
@@ -255,7 +255,7 @@ goog.ui.MenuItem.prototype.handleKeyEventInternal = function(e) {
   if (e.keyCode == this.getMnemonic() && this.performActionInternal(e)) {
     return true;
   } else {
-    return goog.ui.MenuItem.base(this, 'handleKeyEventInternal', e);
+    return goog.base(this, 'handleKeyEventInternal', e);
   }
 };
 
@@ -298,7 +298,7 @@ goog.ui.MenuItem.prototype.getPreferredAriaRole = function() {
   if (this.isSupportedState(goog.ui.Component.State.SELECTED)) {
     return goog.a11y.aria.Role.MENU_ITEM_RADIO;
   }
-  return goog.ui.MenuItem.base(this, 'getPreferredAriaRole');
+  return goog.base(this, 'getPreferredAriaRole');
 };
 
 

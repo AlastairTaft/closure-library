@@ -1,0 +1,24 @@
+{
+  "name": "closure-library",
+  "version": "1.0.0",
+  "description": "The closure library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlastairTaft/closure-library.git"
+  },
+  "keywords": [
+    "closure-library"
+  ],
+  "author": {
+    "name": "Alastair Taft"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlastairTaft/closure-library/issues"
+  },
+  "homepage": "https://github.com/AlastairTaft/closure-library"
+}

@@ -2,10 +2,7 @@
   "name": "closure-library",
   "version": "1.0.0",
   "description": "The closure library.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "closure/goog/bootstrap/nodejs.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/AlastairTaft/closure-library.git"
@@ -21,8 +18,4 @@
     "url": "https://github.com/AlastairTaft/closure-library/issues"
   },
   "homepage": "https://github.com/AlastairTaft/closure-library",
-  "devDependencies": {
-	"mocha": "*",
-	"chai": "*"
-  } 
 }

@@ -10,3 +10,7 @@
 
 # python
 *.pyc
+/*.njsproj
+/*.suo
+/node_modules
+/obj

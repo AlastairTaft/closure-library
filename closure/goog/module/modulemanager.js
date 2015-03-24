@@ -46,7 +46,7 @@ goog.require('goog.object');
  * @suppress {checkStructDictInheritance}
  */
 goog.module.ModuleManager = function() {
-  goog.module.ModuleManager.base(this, 'constructor');
+  goog.base(this, 'constructor');
 
   /**
    * A mapping from module id to ModuleInfo object.
@@ -1344,7 +1344,7 @@ goog.module.ModuleManager.prototype.executeCallbacks_ = function(type) {
 
 /** @override */
 goog.module.ModuleManager.prototype.disposeInternal = function() {
-  goog.module.ModuleManager.base(this, 'disposeInternal');
+  goog.base(this, 'disposeInternal');
 
   // Dispose of each ModuleInfo object.
   goog.disposeAll(

@@ -55,7 +55,7 @@ goog.require('goog.ui.SelectionModel');
  * @extends {goog.ui.Control}
  */
 goog.ui.Palette = function(items, opt_renderer, opt_domHelper) {
-  goog.ui.Palette.base(this, 'constructor', items,
+  goog.base(this, 'constructor', items,
       opt_renderer || goog.ui.PaletteRenderer.getInstance(), opt_domHelper);
   this.setAutoStates(goog.ui.Component.State.CHECKED |
       goog.ui.Component.State.SELECTED | goog.ui.Component.State.OPENED, false);
@@ -242,7 +242,7 @@ goog.ui.Palette.prototype.performActionInternal = function(e) {
   var item = this.getHighlightedItem();
   if (item) {
     this.setSelectedItem(item);
-    return goog.ui.Palette.base(this, 'performActionInternal', e);
+    return goog.base(this, 'performActionInternal', e);
   }
   return false;
 };
@@ -528,7 +528,7 @@ goog.ui.Palette.prototype.setHighlighted = function(highlight) {
   }
   // The highlight event should be fired once the component has updated its own
   // state.
-  goog.ui.Palette.base(this, 'setHighlighted', highlight);
+  goog.base(this, 'setHighlighted', highlight);
 };
 
 

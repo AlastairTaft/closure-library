@@ -61,7 +61,7 @@ goog.require('goog.userAgent');
  * @final
  */
 goog.messaging.PortChannel = function(underlyingPort) {
-  goog.messaging.PortChannel.base(this, 'constructor');
+  goog.base(this, 'constructor');
 
   /**
    * The wrapped message-passing entity.
@@ -397,5 +397,5 @@ goog.messaging.PortChannel.prototype.disposeInternal = function() {
     this.port_.terminate();
   }
   delete this.port_;
-  goog.messaging.PortChannel.base(this, 'disposeInternal');
+  goog.base(this, 'disposeInternal');
 };

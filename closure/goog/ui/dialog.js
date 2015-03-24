@@ -86,7 +86,7 @@ goog.require('goog.ui.ModalPopup');
  * @extends {goog.ui.ModalPopup}
  */
 goog.ui.Dialog = function(opt_class, opt_useIframeMask, opt_domHelper) {
-  goog.ui.Dialog.base(this, 'constructor', opt_useIframeMask, opt_domHelper);
+  goog.base(this, 'constructor', opt_useIframeMask, opt_domHelper);
 
   /**
    * CSS class name for the dialog element, also used as a class name prefix for
@@ -426,7 +426,7 @@ goog.ui.Dialog.prototype.getDialogElement = function() {
  */
 goog.ui.Dialog.prototype.getBackgroundElement = function() {
   this.renderIfNoDom_();
-  return goog.ui.Dialog.base(this, 'getBackgroundElement');
+  return goog.base(this, 'getBackgroundElement');
 };
 
 
@@ -581,7 +581,7 @@ goog.ui.Dialog.prototype.setDraggingEnabled_ = function(enabled) {
 
 /** @override */
 goog.ui.Dialog.prototype.createDom = function() {
-  goog.ui.Dialog.base(this, 'createDom');
+  goog.base(this, 'createDom');
   var element = this.getElement();
   goog.asserts.assert(element, 'getElement() returns null');
 
@@ -631,7 +631,7 @@ goog.ui.Dialog.prototype.createDom = function() {
 
 /** @override */
 goog.ui.Dialog.prototype.decorateInternal = function(element) {
-  goog.ui.Dialog.base(this, 'decorateInternal', element);
+  goog.base(this, 'decorateInternal', element);
   var dialogElement = this.getElement();
   goog.asserts.assert(dialogElement,
       'The DOM element for dialog cannot be null.');
@@ -714,7 +714,7 @@ goog.ui.Dialog.prototype.decorateInternal = function(element) {
 
 /** @override */
 goog.ui.Dialog.prototype.enterDocument = function() {
-  goog.ui.Dialog.base(this, 'enterDocument');
+  goog.base(this, 'enterDocument');
 
   // Listen for keyboard events while the dialog is visible.
   this.getHandler().
@@ -763,7 +763,7 @@ goog.ui.Dialog.prototype.exitDocument = function() {
   // Remove drag support.
   this.setDraggingEnabled_(false);
 
-  goog.ui.Dialog.base(this, 'exitDocument');
+  goog.base(this, 'exitDocument');
 };
 
 
@@ -785,7 +785,7 @@ goog.ui.Dialog.prototype.setVisible = function(visible) {
     this.render();
   }
 
-  goog.ui.Dialog.base(this, 'setVisible', visible);
+  goog.base(this, 'setVisible', visible);
 };
 
 
@@ -794,7 +794,7 @@ goog.ui.Dialog.prototype.setVisible = function(visible) {
  * @suppress {deprecated} AFTER_SHOW is deprecated earlier in this file.
  */
 goog.ui.Dialog.prototype.onShow = function() {
-  goog.ui.Dialog.base(this, 'onShow');
+  goog.base(this, 'onShow');
   this.dispatchEvent(goog.ui.Dialog.EventType.AFTER_SHOW);
 };
 
@@ -804,7 +804,7 @@ goog.ui.Dialog.prototype.onShow = function() {
  * @suppress {deprecated} AFTER_HIDE is deprecated earlier in this file.
  */
 goog.ui.Dialog.prototype.onHide = function() {
-  goog.ui.Dialog.base(this, 'onHide');
+  goog.base(this, 'onHide');
   this.dispatchEvent(goog.ui.Dialog.EventType.AFTER_HIDE);
   if (this.disposeOnHide_) {
     this.dispose();
@@ -936,7 +936,7 @@ goog.ui.Dialog.prototype.getDisposeOnHide = function() {
 goog.ui.Dialog.prototype.disposeInternal = function() {
   this.titleCloseEl_ = null;
   this.buttonEl_ = null;
-  goog.ui.Dialog.base(this, 'disposeInternal');
+  goog.base(this, 'disposeInternal');
 };
 
 

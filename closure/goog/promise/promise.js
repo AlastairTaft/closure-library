@@ -1207,7 +1207,7 @@ goog.Promise.setUnhandledRejectionHandler = function(handler) {
  * @final
  */
 goog.Promise.CancellationError = function(opt_message) {
-  goog.Promise.CancellationError.base(this, 'constructor', opt_message);
+  goog.base(this, 'constructor', opt_message);
 };
 goog.inherits(goog.Promise.CancellationError, goog.debug.Error);
 

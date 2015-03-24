@@ -55,7 +55,7 @@ goog.require('goog.storage.RichStorage');
  * @final
  */
 goog.storage.EncryptedStorage = function(mechanism, secret) {
-  goog.storage.EncryptedStorage.base(this, 'constructor', mechanism);
+  goog.base(this, 'constructor', mechanism);
   this.secret_ = goog.crypt.stringToByteArray(secret);
   this.cleartextSerializer_ = new goog.json.Serializer();
 };
@@ -166,7 +166,7 @@ goog.storage.EncryptedStorage.prototype.set = function(
       this.encryptValue_(salt, key,
                          this.cleartextSerializer_.serialize(value)));
   wrapper[goog.storage.EncryptedStorage.SALT_KEY] = salt;
-  goog.storage.EncryptedStorage.base(this, 'set',
+  goog.base(this, 'set',
       this.hashKeyWithSecret_(key), wrapper, opt_expiration);
 };
 
@@ -174,7 +174,7 @@ goog.storage.EncryptedStorage.prototype.set = function(
 /** @override */
 goog.storage.EncryptedStorage.prototype.getWrapper = function(
     key, opt_expired) {
-  var wrapper = goog.storage.EncryptedStorage.base(this, 'getWrapper',
+  var wrapper = goog.base(this, 'getWrapper',
       this.hashKeyWithSecret_(key), opt_expired);
   if (!wrapper) {
     return undefined;
@@ -197,6 +197,6 @@ goog.storage.EncryptedStorage.prototype.getWrapper = function(
 
 /** @override */
 goog.storage.EncryptedStorage.prototype.remove = function(key) {
-  goog.storage.EncryptedStorage.base(
+  goog.base(
       this, 'remove', this.hashKeyWithSecret_(key));
 };

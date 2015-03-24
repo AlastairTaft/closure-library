@@ -41,7 +41,7 @@ goog.require('goog.fx.TransitionBase');
  * @suppress {checkStructDictInheritance}
  */
 goog.fx.AnimationQueue = function() {
-  goog.fx.AnimationQueue.base(this, 'constructor');
+  goog.base(this, 'constructor');
 
   /**
    * An array holding all animations in the queue.
@@ -104,7 +104,7 @@ goog.fx.AnimationQueue.prototype.disposeInternal = function() {
   });
   this.queue.length = 0;
 
-  goog.fx.AnimationQueue.base(this, 'disposeInternal');
+  goog.base(this, 'disposeInternal');
 };
 
 
@@ -116,7 +116,7 @@ goog.fx.AnimationQueue.prototype.disposeInternal = function() {
  * @struct
  */
 goog.fx.AnimationParallelQueue = function() {
-  goog.fx.AnimationParallelQueue.base(this, 'constructor');
+  goog.base(this, 'constructor');
 
   /**
    * Number of finished animations.
@@ -214,7 +214,7 @@ goog.fx.AnimationParallelQueue.prototype.onAnimationFinish = function(e) {
  * @struct
  */
 goog.fx.AnimationSerialQueue = function() {
-  goog.fx.AnimationSerialQueue.base(this, 'constructor');
+  goog.base(this, 'constructor');
 
   /**
    * Current animation in queue currently active.

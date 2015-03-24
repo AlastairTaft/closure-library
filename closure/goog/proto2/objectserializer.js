@@ -119,7 +119,7 @@ goog.proto2.ObjectSerializer.prototype.getDeserializedValue =
     return Boolean(value);
   }
 
-  return goog.proto2.ObjectSerializer.base(
+  return goog.base(
       this, 'getDeserializedValue', field, value);
 };
 

@@ -68,7 +68,7 @@ goog.require('goog.object');
  * @final
  */
 goog.net.FileDownloader = function(dir, opt_pool) {
-  goog.net.FileDownloader.base(this, 'constructor');
+  goog.base(this, 'constructor');
 
   /**
    * The directory in which the downloaded files are stored.
@@ -600,7 +600,7 @@ goog.net.FileDownloader.prototype.disposeInternal = function() {
   goog.dispose(this.pool_);
   delete this.pool_;
 
-  goog.net.FileDownloader.base(this, 'disposeInternal');
+  goog.base(this, 'disposeInternal');
 };
 
 

@@ -38,7 +38,7 @@ goog.require('goog.messaging.MessageChannel'); // interface
  * @implements {goog.messaging.MessageChannel}
  */
 goog.messaging.AbstractChannel = function() {
-  goog.messaging.AbstractChannel.base(this, 'constructor');
+  goog.base(this, 'constructor');
 
   /**
    * The services registered for this channel.
@@ -202,7 +202,7 @@ goog.messaging.AbstractChannel.prototype.decodePayload = function(
 
 /** @override */
 goog.messaging.AbstractChannel.prototype.disposeInternal = function() {
-  goog.messaging.AbstractChannel.base(this, 'disposeInternal');
+  goog.base(this, 'disposeInternal');
   delete this.logger;
   delete this.services_;
   delete this.defaultService_;

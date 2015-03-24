@@ -59,7 +59,7 @@ goog.require('goog.userAgent');
  */
 goog.ui.Prompt = function(promptTitle, promptHtml, callback, opt_defaultValue,
     opt_class, opt_useIframeForIE, opt_domHelper) {
-  goog.ui.Prompt.base(this, 'constructor',
+  goog.base(this, 'constructor',
       opt_class, opt_useIframeForIE, opt_domHelper);
 
   /**
@@ -335,7 +335,7 @@ goog.ui.Prompt.prototype.updateOkButtonState_ = function() {
  * @override
  */
 goog.ui.Prompt.prototype.setVisible = function(visible) {
-  goog.ui.Prompt.base(this, 'setVisible', visible);
+  goog.base(this, 'setVisible', visible);
 
   if (visible) {
     this.isClosing_ = false;
@@ -351,7 +351,7 @@ goog.ui.Prompt.prototype.setVisible = function(visible) {
  * @override
  */
 goog.ui.Prompt.prototype.focus = function() {
-  goog.ui.Prompt.base(this, 'focus');
+  goog.base(this, 'focus');
 
   if (goog.userAgent.OPERA) {
     // select() doesn't focus <input> elements in Opera.

@@ -194,7 +194,7 @@ goog.net.Ipv4Address = function(address) {
       ip = ip.shiftLeft(8).or(intOctet);
     }
   }
-  goog.net.Ipv4Address.base(
+  goog.base(
       this, 'constructor', /** @type {!goog.math.Integer} */ (ip), 4);
 };
 goog.inherits(goog.net.Ipv4Address, goog.net.IpAddress);
@@ -317,7 +317,7 @@ goog.net.Ipv6Address = function(address) {
       ip = ip.shiftLeft(16).or(parsedHextet);
     }
   }
-  goog.net.Ipv6Address.base(
+  goog.base(
       this, 'constructor', /** @type {!goog.math.Integer} */ (ip), 6);
 };
 goog.inherits(goog.net.Ipv6Address, goog.net.IpAddress);

@@ -208,7 +208,7 @@ goog.ui.RichTextSpellChecker.prototype.enterDocument = function() {
 
 /** @override */
 goog.ui.RichTextSpellChecker.prototype.initSuggestionsMenu = function() {
-  goog.ui.RichTextSpellChecker.base(this, 'initSuggestionsMenu');
+  goog.base(this, 'initSuggestionsMenu');
 
   var menu = goog.asserts.assertInstanceof(this.getMenu(), goog.ui.PopupMenu,
       'The menu of a richtextspellchecker must be a PopupMenu.');
@@ -739,7 +739,7 @@ goog.ui.RichTextSpellChecker.prototype.handleRootNodeKeyEvent = function(e) {
 
 /** @override */
 goog.ui.RichTextSpellChecker.prototype.onCorrectionAction = function(event) {
-  goog.ui.RichTextSpellChecker.base(this, 'onCorrectionAction', event);
+  goog.base(this, 'onCorrectionAction', event);
 
   // In case of editWord base class has already set the focus (on the input),
   // otherwise set the focus back on the word.

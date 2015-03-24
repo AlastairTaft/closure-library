@@ -46,7 +46,7 @@ goog.require('goog.userAgent');
  * @final
  */
 goog.ui.DragDropDetector = function(opt_filePath) {
-  goog.ui.DragDropDetector.base(this, 'constructor');
+  goog.base(this, 'constructor');
 
   var iframe = goog.dom.createDom(goog.dom.TagName.IFRAME, {
     'frameborder': 0
@@ -560,7 +560,7 @@ goog.ui.DragDropDetector.prototype.handleNodeInserted_ = function(e) {
 
 /** @override */
 goog.ui.DragDropDetector.prototype.disposeInternal = function() {
-  goog.ui.DragDropDetector.base(this, 'disposeInternal');
+  goog.base(this, 'disposeInternal');
   this.handler_.dispose();
   this.handler_ = null;
 };

@@ -194,6 +194,6 @@ goog.proto2.PbLiteSerializer.prototype.deserialize =
       toConvert[parseInt(key, 10) + 1] = data[key];
     }
   }
-  return goog.proto2.PbLiteSerializer.base(
+  return goog.base(
       this, 'deserialize', descriptor, toConvert);
 };

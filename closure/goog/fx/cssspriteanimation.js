@@ -58,7 +58,7 @@ goog.fx.CssSpriteAnimation = function(element, size, box, time, opt_acc,
   var start = [box.left, box.top];
   // We never draw for the end so we do not need to subtract for the size
   var end = [box.right, box.bottom];
-  goog.fx.CssSpriteAnimation.base(
+  goog.base(
       this, 'constructor', start, end, time, opt_acc);
 
   /**
@@ -93,7 +93,7 @@ goog.fx.CssSpriteAnimation.prototype.onAnimate = function() {
   var y = -Math.floor(this.coords[1] / this.size_.height) * this.size_.height;
   this.element_.style.backgroundPosition = x + 'px ' + y + 'px';
 
-  goog.fx.CssSpriteAnimation.base(this, 'onAnimate');
+  goog.base(this, 'onAnimate');
 };
 
 
@@ -102,7 +102,7 @@ goog.fx.CssSpriteAnimation.prototype.onFinish = function() {
   if (!this.disableLoop_) {
     this.play(true);
   }
-  goog.fx.CssSpriteAnimation.base(this, 'onFinish');
+  goog.base(this, 'onFinish');
 };
 
 

@@ -36,7 +36,7 @@ goog.require('goog.string');
  * @extends {goog.format.EmailAddress}
  */
 goog.format.InternationalizedEmailAddress = function(opt_address, opt_name) {
-  goog.format.InternationalizedEmailAddress.base(
+  goog.base(
       this, 'constructor', opt_address, opt_name);
 };
 goog.inherits(

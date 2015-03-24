@@ -70,7 +70,7 @@ goog.forwardDeclare('goog.Uri');
  * @extends {goog.events.EventTarget}
  */
 goog.net.XhrIo = function(opt_xmlHttpFactory) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * Map of default headers to add to every request, use:

@@ -55,7 +55,7 @@ goog.require('goog.storage.RichStorage');
  * @final
  */
 goog.storage.EncryptedStorage = function(mechanism, secret) {
-  goog.base(this, 'constructor', mechanism);
+  goog.base(this, mechanism);
   this.secret_ = goog.crypt.stringToByteArray(secret);
   this.cleartextSerializer_ = new goog.json.Serializer();
 };

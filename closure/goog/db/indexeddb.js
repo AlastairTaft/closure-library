@@ -42,7 +42,7 @@ goog.require('goog.events.EventTarget');
  * @final
  */
 goog.db.IndexedDb = function(db) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * Underlying IndexedDB database object.

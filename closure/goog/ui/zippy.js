@@ -59,7 +59,7 @@ goog.require('goog.style');
  */
 goog.ui.Zippy = function(header, opt_content, opt_expanded,
     opt_expandedHeader, opt_domHelper) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * DomHelper used to interact with the document, allowing components to be
@@ -450,7 +450,7 @@ goog.ui.Zippy.prototype.dispatchActionEvent_ = function() {
  * @final
  */
 goog.ui.ZippyEvent = function(type, target, expanded) {
-  goog.base(this, 'constructor', type, target);
+  goog.base(this, type, target);
 
   /**
    * The expanded state.

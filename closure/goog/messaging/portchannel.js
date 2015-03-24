@@ -61,7 +61,7 @@ goog.require('goog.userAgent');
  * @final
  */
 goog.messaging.PortChannel = function(underlyingPort) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The wrapped message-passing entity.

@@ -48,7 +48,7 @@ goog.require('goog.events.EventType');
  */
 goog.dom.BufferedViewportSizeMonitor = function(
     viewportSizeMonitor, opt_bufferMs) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The underlying viewport size monitor.

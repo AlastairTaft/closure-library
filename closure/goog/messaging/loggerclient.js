@@ -44,7 +44,7 @@ goog.messaging.LoggerClient = function(channel, serviceName) {
     return goog.messaging.LoggerClient.instance_;
   }
 
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The channel on which to send the log messages.

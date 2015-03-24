@@ -58,7 +58,7 @@ goog.require('goog.style');
  * @constructor
  */
 goog.fx.AbstractDragDrop = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * List of items that makes up the drag source or drop target.
@@ -1176,7 +1176,7 @@ goog.fx.DragDropEvent = function(type, source, sourceItem,
                                  opt_subtarget) {
   // TODO(eae): Get rid of all the optional parameters and have the caller set
   // the fields directly instead.
-  goog.base(this, 'constructor', type);
+  goog.base(this, type);
 
   /**
    * Reference to the source goog.fx.AbstractDragDrop object.
@@ -1254,7 +1254,7 @@ goog.inherits(goog.fx.DragDropEvent, goog.events.Event);
  * @constructor
  */
 goog.fx.DragDropItem = function(element, opt_data) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * Reference to drag source/target element

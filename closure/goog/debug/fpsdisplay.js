@@ -39,7 +39,7 @@ goog.require('goog.ui.Component');
  * @final
  */
 goog.debug.FpsDisplay = function(opt_domHelper) {
-  goog.base(this, 'constructor', opt_domHelper);
+  goog.base(this, opt_domHelper);
 };
 goog.inherits(goog.debug.FpsDisplay, goog.ui.Component);
 

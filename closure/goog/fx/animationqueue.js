@@ -41,7 +41,7 @@ goog.require('goog.fx.TransitionBase');
  * @suppress {checkStructDictInheritance}
  */
 goog.fx.AnimationQueue = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * An array holding all animations in the queue.
@@ -116,7 +116,7 @@ goog.fx.AnimationQueue.prototype.disposeInternal = function() {
  * @struct
  */
 goog.fx.AnimationParallelQueue = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * Number of finished animations.
@@ -214,7 +214,7 @@ goog.fx.AnimationParallelQueue.prototype.onAnimationFinish = function(e) {
  * @struct
  */
 goog.fx.AnimationSerialQueue = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * Current animation in queue currently active.

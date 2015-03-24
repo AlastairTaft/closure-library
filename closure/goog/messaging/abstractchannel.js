@@ -38,7 +38,7 @@ goog.require('goog.messaging.MessageChannel'); // interface
  * @implements {goog.messaging.MessageChannel}
  */
 goog.messaging.AbstractChannel = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The services registered for this channel.

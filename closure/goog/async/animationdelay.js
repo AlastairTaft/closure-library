@@ -56,7 +56,7 @@ goog.require('goog.functions');
  * @final
  */
 goog.async.AnimationDelay = function(listener, opt_window, opt_handler) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The function that will be invoked after a delay.

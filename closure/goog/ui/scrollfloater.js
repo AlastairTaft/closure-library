@@ -66,7 +66,7 @@ goog.ui.ScrollFloater = function(opt_parentElement, opt_domHelper) {
   var domHelper = opt_parentElement ?
       goog.dom.getDomHelper(opt_parentElement) : opt_domHelper;
 
-  goog.base(this, 'constructor', domHelper);
+  goog.base(this, domHelper);
 
   /**
    * The element to which the scroll-floated element will be attached

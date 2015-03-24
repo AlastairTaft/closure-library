@@ -65,7 +65,7 @@ goog.require('goog.log');
  * @extends {goog.events.EventTarget}
  */
 goog.net.WebSocket = function(opt_autoReconnect, opt_getNextReconnect) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * True if the web socket should automatically reconnect or not.

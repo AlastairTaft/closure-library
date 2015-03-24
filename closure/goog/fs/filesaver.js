@@ -40,7 +40,7 @@ goog.require('goog.fs.ProgressEvent');
  * @extends {goog.events.EventTarget}
  */
 goog.fs.FileSaver = function(fileSaver) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The underlying FileSaver object.

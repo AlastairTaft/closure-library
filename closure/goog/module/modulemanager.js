@@ -46,7 +46,7 @@ goog.require('goog.object');
  * @suppress {checkStructDictInheritance}
  */
 goog.module.ModuleManager = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * A mapping from module id to ModuleInfo object.

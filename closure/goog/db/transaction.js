@@ -43,7 +43,7 @@ goog.require('goog.events.EventTarget');
  * @final
  */
 goog.db.Transaction = function(tx, db) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * Underlying IndexedDB transaction object.

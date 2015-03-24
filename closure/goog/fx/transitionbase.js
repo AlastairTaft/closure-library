@@ -33,7 +33,7 @@ goog.require('goog.fx.Transition');  // Unreferenced: interface
  * @extends {goog.events.EventTarget}
  */
 goog.fx.TransitionBase = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The internal state of the animation.

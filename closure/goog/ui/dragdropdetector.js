@@ -46,7 +46,7 @@ goog.require('goog.userAgent');
  * @final
  */
 goog.ui.DragDropDetector = function(opt_filePath) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   var iframe = goog.dom.createDom(goog.dom.TagName.IFRAME, {
     'frameborder': 0

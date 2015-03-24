@@ -32,7 +32,7 @@ goog.require('goog.events.Event');
  * @final
  */
 goog.fs.ProgressEvent = function(event, target) {
-  goog.base(this, 'constructor', event.type, target);
+  goog.base(this, event.type, target);
 
   /**
    * The underlying event object.

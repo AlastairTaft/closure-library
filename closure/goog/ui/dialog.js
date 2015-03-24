@@ -86,7 +86,7 @@ goog.require('goog.ui.ModalPopup');
  * @extends {goog.ui.ModalPopup}
  */
 goog.ui.Dialog = function(opt_class, opt_useIframeMask, opt_domHelper) {
-  goog.base(this, 'constructor', opt_useIframeMask, opt_domHelper);
+  goog.base(this, opt_useIframeMask, opt_domHelper);
 
   /**
    * CSS class name for the dialog element, also used as a class name prefix for

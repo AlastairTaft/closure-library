@@ -57,7 +57,7 @@ goog.require('goog.userAgent');
  * @extends {goog.events.EventTarget}
  */
 goog.events.InputHandler = function(element) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * Id of a timer used to postpone firing input event in emulation mode.

@@ -69,7 +69,7 @@ goog.db.Error = function(error, context, opt_message) {
   if (opt_message) {
     msg += ', ' + opt_message;
   }
-  goog.base(this, 'constructor', msg);
+  goog.base(this, msg);
 };
 goog.inherits(goog.db.Error, goog.debug.Error);
 

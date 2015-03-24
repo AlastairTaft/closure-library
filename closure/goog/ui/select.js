@@ -61,7 +61,7 @@ goog.require('goog.ui.registry');
  */
 goog.ui.Select = function(opt_caption, opt_menu, opt_renderer, opt_domHelper,
     opt_menuRenderer) {
-  goog.base(this, 'constructor',
+  goog.base(this,
       opt_caption, opt_menu, opt_renderer, opt_domHelper,
       opt_menuRenderer ||
           new goog.ui.MenuRenderer(goog.a11y.aria.Role.LISTBOX));

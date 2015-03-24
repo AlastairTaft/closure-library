@@ -50,7 +50,7 @@ goog.require('goog.net.NetworkStatusMonitor');
  * @implements {goog.net.NetworkStatusMonitor}
  */
 goog.events.OnlineHandler = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * @private {goog.events.EventHandler<!goog.events.OnlineHandler>}

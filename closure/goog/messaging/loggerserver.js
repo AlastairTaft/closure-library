@@ -42,7 +42,7 @@ goog.require('goog.log.Level');
  * @final
  */
 goog.messaging.LoggerServer = function(channel, serviceName, opt_channelName) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The channel that is sending the log messages.

@@ -52,7 +52,7 @@ goog.require('goog.userAgent.product');
  * @implements {goog.module.AbstractModuleLoader}
  */
 goog.module.ModuleLoader = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * Event handler for managing handling events.

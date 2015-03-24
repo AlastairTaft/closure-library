@@ -51,7 +51,7 @@ goog.require('goog.testing.TestCase');
  * @final
  */
 goog.testing.ShardingTestCase = function(shardIndex, numShards, opt_name) {
-  goog.base(this, 'constructor', opt_name);
+  goog.base(this, opt_name);
 
   goog.asserts.assert(shardIndex > 0, 'Shard index should be positive');
   goog.asserts.assert(numShards > 0, 'Number of shards should be positive');

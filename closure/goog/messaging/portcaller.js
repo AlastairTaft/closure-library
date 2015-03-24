@@ -43,7 +43,7 @@ goog.require('goog.object');
  * @final
  */
 goog.messaging.PortCaller = function(operatorPort) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The channel to the {@link goog.messaging.PortOperator} for this network.

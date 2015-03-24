@@ -63,7 +63,7 @@ goog.require('goog.userAgent');
  * @extends {goog.ui.Component}
  */
 goog.ui.ModalPopup = function(opt_useIframeMask, opt_domHelper) {
-  goog.base(this, 'constructor', opt_domHelper);
+  goog.base(this, opt_domHelper);
 
   /**
    * Whether the modal popup should use an iframe as the background

@@ -38,7 +38,7 @@ goog.require('goog.messaging.MultiChannel');
  * @extends {goog.Disposable}
  */
 goog.messaging.RespondingChannel = function(messageChannel) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The message channel wrapped in a MultiChannel so we can send private and

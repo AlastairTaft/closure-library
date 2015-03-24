@@ -61,7 +61,7 @@ goog.require('goog.userAgent.product.isVersion');
  * @extends {goog.events.EventTarget}
  */
 goog.events.WheelHandler = function(element, opt_capture) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * This is the element that we will listen to the real wheel events on.

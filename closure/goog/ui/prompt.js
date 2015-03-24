@@ -59,7 +59,7 @@ goog.require('goog.userAgent');
  */
 goog.ui.Prompt = function(promptTitle, promptHtml, callback, opt_defaultValue,
     opt_class, opt_useIframeForIE, opt_domHelper) {
-  goog.base(this, 'constructor',
+  goog.base(this,
       opt_class, opt_useIframeForIE, opt_domHelper);
 
   /**

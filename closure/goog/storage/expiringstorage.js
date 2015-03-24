@@ -32,7 +32,7 @@ goog.require('goog.storage.RichStorage');
  * @extends {goog.storage.RichStorage}
  */
 goog.storage.ExpiringStorage = function(mechanism) {
-  goog.base(this, 'constructor', mechanism);
+  goog.base(this, mechanism);
 };
 goog.inherits(goog.storage.ExpiringStorage, goog.storage.RichStorage);
 

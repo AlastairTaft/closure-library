@@ -165,7 +165,7 @@ goog.require('goog.userAgent');
  * @extends {goog.events.EventTarget}
  */
 goog.net.IframeIo = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * Name for this IframeIo and frame

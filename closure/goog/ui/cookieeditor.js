@@ -37,7 +37,7 @@ goog.require('goog.ui.Component');
  * @final
  */
 goog.ui.CookieEditor = function(opt_domHelper) {
-  goog.base(this, 'constructor', opt_domHelper);
+  goog.base(this, opt_domHelper);
 };
 goog.inherits(goog.ui.CookieEditor, goog.ui.Component);
 

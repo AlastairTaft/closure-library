@@ -61,7 +61,7 @@ goog.require('goog.userAgent');
  * @final
  */
 goog.events.ImeHandler = function(el) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The element to listen on.

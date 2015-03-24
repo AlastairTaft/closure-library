@@ -37,7 +37,7 @@ goog.require('goog.ui.ControlRenderer');
  * @extends {goog.ui.ControlRenderer}
  */
 goog.ui.CheckboxRenderer = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 };
 goog.inherits(goog.ui.CheckboxRenderer, goog.ui.ControlRenderer);
 goog.addSingletonGetter(goog.ui.CheckboxRenderer);

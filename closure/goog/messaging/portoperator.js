@@ -42,7 +42,7 @@ goog.require('goog.object');
  * @final
  */
 goog.messaging.PortOperator = function(name) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The collection of channels for communicating with other contexts in the

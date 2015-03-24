@@ -45,7 +45,7 @@ goog.require('goog.object');
  * @final
  */
 goog.messaging.MultiChannel = function(underlyingChannel) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The underlying channel across which all requests are sent.

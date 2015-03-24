@@ -55,7 +55,7 @@ goog.require('goog.userAgent');
  */
 goog.debug.ErrorReporter = function(
     handlerUrl, opt_contextProvider, opt_noAutoProtect) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * Context provider, if one was provided.

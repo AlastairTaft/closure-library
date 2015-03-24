@@ -63,7 +63,7 @@ goog.require('goog.userAgent');
  */
 goog.ui.SplitPane = function(firstComponent, secondComponent, orientation,
     opt_domHelper) {
-  goog.base(this, 'constructor', opt_domHelper);
+  goog.base(this, opt_domHelper);
 
   /**
    * The orientation of the containers.

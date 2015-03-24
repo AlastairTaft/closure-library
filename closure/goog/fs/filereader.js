@@ -37,7 +37,7 @@ goog.require('goog.fs.ProgressEvent');
  * @final
  */
 goog.fs.FileReader = function() {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The underlying FileReader object.

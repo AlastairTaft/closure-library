@@ -68,7 +68,7 @@ goog.require('goog.object');
  * @final
  */
 goog.net.FileDownloader = function(dir, opt_pool) {
-  goog.base(this, 'constructor');
+  goog.base(this);
 
   /**
    * The directory in which the downloaded files are stored.

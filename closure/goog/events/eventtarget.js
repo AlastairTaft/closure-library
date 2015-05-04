@@ -67,7 +67,7 @@ goog.require('goog.object');
  * @implements {goog.events.Listenable}
  */
 goog.events.EventTarget = function() {
-  goog.base(this);
+  goog.Disposable.call(this);
 
   /**
    * Maps of event type to an array of listeners.

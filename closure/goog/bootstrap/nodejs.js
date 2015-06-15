@@ -48,7 +48,7 @@ var vm = require('vm');
 /**
  * The goog namespace in the global scope.
  */
-global.goog = {};
+global.goog = global.goog || {};
 
 
 /**

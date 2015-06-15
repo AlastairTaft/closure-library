@@ -1,6 +1,6 @@
 {
   "name": "@alastair/closure-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The closure library.",
   "main": "closure/goog/bootstrap/nodejs.js",
   "repository": {
